@@ -1,12 +1,10 @@
 language: python
 python:
   - "2.7"
-matrix:
-  include:
-    - python: 2.7
-      env: NPY_SEPARATE_COMPILATION=1
 
 # command to install dependencies
-install: pip install -r requirements.txt --use-mirrors
+install:
+  - pip install --use-mirrors numpy
+  - pip install -r requirements.txt --use-mirrors
 # command to run tests
 script: python tests/count_tests.py
