@@ -1,4 +1,4 @@
 HTBaseCount
 ===========
 
-High Throughput Base Count in Sequences
+High Throughput Base Count in Sequences based on HTSeq
